@@ -1,17 +1,12 @@
 import express, { NextFunction, Request, Response } from "express";
-import { payrollDatesRoutes } from "./routes/payrollDatesRoutes";
 import { Config } from "./config";
+import routes from "./route";
 
 export function appFactory(config: Config) {
   const app = express();
 
-  app.get("/", function (req, res) {
-    res.send("Payroll dates API");
-  });
-  app.use("/dates", payrollDatesRoutes());
+  app.use("/", routes(config));
 
-  // our custom JSON 404 middleware. Since it's placed last
-  // it will be the last middleware called, if all others
   // invoke next() and do not respond.
   app.use(function (req, res, next) {
     res.status(404);
