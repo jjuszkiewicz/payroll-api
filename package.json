@@ -1,5 +1,5 @@
 {
-  "name": "payroll-dates",
+  "name": "payroll",
   "version": "1.0.0",
   "description": "API for payroll",
   "main": "index.js",
