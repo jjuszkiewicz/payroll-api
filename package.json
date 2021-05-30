@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "build": "tsc -p .",
+    "start": "node build/src/index.js",
     "fix": " npx prettier --write .",
     "test": "jest"
   },
