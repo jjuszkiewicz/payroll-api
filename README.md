@@ -27,7 +27,7 @@ API returns dates for the follow 12 months of base salar and bonus dates in two 
 
 **IMPORTANT:** date format `YYYY-MM-DD`. It doesn't mater with day of month you point, because only year and month are important to calculate list.
 
-# Another use ful options:
+# Another useful options:
 
 - `npm run test` to run tests
 - `npm run fix` to fix code style via Prettier (https://prettier.io/)
