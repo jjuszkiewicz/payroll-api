@@ -10,7 +10,6 @@ import {
 } from "../util/dateUtil";
 import { sendCsv } from "../util/responseUtil";
 
-
 export default function payrollDatesController(config: Config) {
   const payrollDateServices = payrollDateServiceFactory();
 

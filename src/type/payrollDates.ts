@@ -1,5 +1,5 @@
 export type PayrollDates = {
-    month: Date;
-    baseSalaryDate: Date;
-    bonusDate: Date;
-  };
+  month: Date;
+  baseSalaryDate: Date;
+  bonusDate: Date;
+};

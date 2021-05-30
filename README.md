@@ -10,7 +10,7 @@ Your API should accept a date as a parameter, and return the payment dates for t
 
 # Instalation
 
-- node veriosn v14.16.0 - if you use nvm (https://github.com/nvm-sh/nvm)  the `.nvmrc` file are added
+- node veriosn v14.16.0 - if you use nvm (https://github.com/nvm-sh/nvm) the `.nvmrc` file are added
 
 - Make command to set up project: `npm i`
 
