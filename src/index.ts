@@ -5,6 +5,6 @@ import config from "./config";
   const app = await appFactory(config);
 
   app.listen(config.port, function () {
-    console.log(`API listening on port ${config.port}!`);
+    console.log(`API listening on port http://localhost:${config.port}/`);
   });
 })();

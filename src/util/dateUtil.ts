@@ -54,7 +54,7 @@ export function formatDate(date: Date, format: FormatDate) {
 export function startOfMonth(date) {
   const startMonth = new Date(date);
   startMonth.setDate(1);
-  return startMonth;
+  return clearTime(startMonth);
 }
 
 export function endOfMonth(date) {
