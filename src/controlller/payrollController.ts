@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { Config } from "../config";
 import { payrollDateService as payrollDateServiceFactory } from "../service/payrollDateService";
+import { PayrollDates } from "../type/payrollDates";
 import {
   addMonths,
   FormatDate,
@@ -9,11 +10,6 @@ import {
 } from "../util/dateUtil";
 import { sendCsv } from "../util/responseUtil";
 
-type PayrollDates = {
-  month: Date;
-  baseSalaryDate: Date;
-  bonusDate: Date;
-};
 
 export default function payrollDatesController(config: Config) {
   const payrollDateServices = payrollDateServiceFactory();
